@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Рога копыта консультации заготовка">
+    <link rel="icon" type="image/png" href="images/favicon.png">пше>
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сайт-визитка</title>
+</head>
+
+<body>
+    <!-- Контейнер 1400px -->
+    <div class="container">
+        <!-- Шапка -->
+        <header class="top-bar">
+            <div class="top-logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" title="На главную" alt="Логотип">
+                </a>
+            </div>
+            <div class="top-slogan">
+                Лучшие рога и лучшие копыта!
+            </div>
+            <div class="top-phone">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+7 (987) 654-32-10">+7 (987) 654-32-10</a>
+            </div>
+        </header>
+        <!-- Меню -->
+        <nav class="menu-wrapper">
+            <button class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu-list">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Контент -->
+        <main class="main-content">
+            <!-- h1 совместно с тегом <title> отражает смысл ключевой фразы страницы -->
+            <h1>Добро пожаловать на сайт-визитку!</h1>
+            <p>Это страница основного контента сайта: описание услуг, товаров, новостей, проектов.</p>
+            <div class="card-grid">
+                <!-- Карточка 1 -->
+                <div class="card">
+                    <img src="images/roga.jpg" alt="Услуга 1" onclick="openLightBox('images/roga.jpg')">
+                    <div class="card-text">
+                        <h2>Услуга 1</h2>
+                        <p>Описание услуги 1, её особенности</p>
+                    </div>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="card">
+                    <img src="images/kopyta.jpg" alt="Услуга 2" onclick="openLightBox('images/kopyta.jpg')">
+                    <div class="card-text">
+                        <h2>Услуга 2</h2>
+                        <p>Описание услуги 2, её особенности</p>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="card">
+                    <img src="images/consalting.jpg" alt="Услуга 3" onclick="openLightBox('images/consalting.jpg')">
+                    <div class="card-text">
+                        <h2>Услуга 3</h2>
+                        <p>Описание услуги 3, её особенности</p>
+                    </div>
+                </div>
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn" onclick="closeLightBox();">x</span>
+                <img id="lightboxImg" title="Увеличенное фото" alt="Увеличенное фото">
+            </div>
+        </main>
+        <!-- Подвал -->
+        <footer class="footer">
+            <section class="footer-section">
+                <h3>Контакты</h3>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+7 (987) 654-32-10">+7 (987) 654-32-10</a>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@rogaikopyta.ru">info@rogaikopyta.ru</a>
+                </p>
+            </section>
+            <section class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <p>
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                </p>
+            </section>
+            <section class="footer-section">
+                <h3>О компании</h3>
+                <p>Краткие преимущества работы с нами!</p>
+            </section>
+        </footer>
+        <div class="copyright">
+            &copy; 2026 Все права защищены
+        </div>        
+    </div>
+    <!-- Кнопка "наверх" и JS -->
+    <button id="topBtn" onclick="goTop();">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
